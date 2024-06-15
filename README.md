@@ -97,7 +97,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [OpenWeatherMap API](https://openweathermap.org/api) for providing the weather data.
 - SwiftUI and Combine for making development easier and more efficient.
-
-```
-
-You can copy and paste this into a `README.md` file in your repository. Be sure to replace the placeholders like `https://github.com/your-username/WeatherApp-SwiftUI.git` with your actual repository URL.
