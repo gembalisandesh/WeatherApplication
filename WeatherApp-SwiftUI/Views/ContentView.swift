@@ -43,9 +43,16 @@ struct ContentView: View {
         }
 
         .alert(isPresented: $showAlert) {
-            Alert(title: Text("Location Access"),
-                  message: Text("Please enable location access to refresh weather data."),
+            Alert(title: Text("Location Services Disabled"),
+                  message: Text("Please enable location services in settings."),
                   dismissButton: .default(Text("OK")))
+        }
+        .alert(isPresented: $cityVM.invalidCity) {
+            Alert(title: Text("Invalid City"),
+                  message: Text("The city name you entered is invalid. Please enter a valid city name."),
+                  dismissButton: .default(Text("OK")) {
+                    cityVM.refreshWeather()
+                  })
         }
     }
 }
