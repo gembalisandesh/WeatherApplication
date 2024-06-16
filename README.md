@@ -87,15 +87,11 @@ The main view of the application. It uses SwiftUI to build the user interface an
 
 ## Screenshots
 
-![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 39](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/c574680f-bce3-4d29-9f68-de4abe56d4f4)
+https://github.com/gembalisandesh/WeatherApplication/assets/93411433/c574680f-bce3-4d29-9f68-de4abe56d4f4
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 07](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/ca2e6839-3439-42f1-80af-fda2110b9c81)
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 17](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/83fe651b-1545-4682-a646-66d8b87d6dc5)
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 35](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/2b7b8c65-5e8e-4163-a562-850e4efadba5)
 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
