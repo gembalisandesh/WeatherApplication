@@ -7,6 +7,9 @@ WeatherApplication is a weather application built using SwiftUI and Combine. It 
 - Real-time weather updates for the user's current location.
 - Weather updates for a specified city.
 - Displays current temperature, weather conditions, wind speed, humidity, and rain chances.
+- Temperature display for the current location and desired location using the city name.
+- Temperature conversion between Celsius and Fahrenheit.
+- Future weather forecasts including maximum and minimum temperatures and expected weather conditions.
 - Interactive UI with smooth loading animations.
 
 ## Requirements
