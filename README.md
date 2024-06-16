@@ -1,6 +1,6 @@
-# WeatherApp-SwiftUI
+# WeatherApplication
 
-WeatherApp-SwiftUI is a weather application built using SwiftUI and Combine. It provides real-time weather updates for the user's current location or a specified city. The app utilizes the OpenWeatherMap API to fetch weather data and displays it in an intuitive and user-friendly interface.
+WeatherApplication is a weather application built using SwiftUI and Combine. It provides real-time weather updates for the user's current location or a specified city. The app utilizes the OpenWeatherMap API to fetch weather data and displays it in an intuitive and user-friendly interface.
 
 ## Features
 
@@ -19,12 +19,12 @@ WeatherApp-SwiftUI is a weather application built using SwiftUI and Combine. It 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/WeatherApp-SwiftUI.git
+   git clone https://github.com/gembalisandesh/WeatherApplication.git
    ```
 2. Open the project in Xcode:
    ```sh
-   cd WeatherApp-SwiftUI
-   open WeatherApp-SwiftUI.xcodeproj
+   cd WeatherApplication
+   open WeatherApplication.xcodeproj
    ```
 3. Build and run the project on your simulator or device.
 
@@ -87,7 +87,7 @@ The main view of the application. It uses SwiftUI to build the user interface an
 
 ## Screenshots
 
-https://github.com/gembalisandesh/WeatherApplication/assets/93411433/c574680f-bce3-4d29-9f68-de4abe56d4f4
+![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 39](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/c574680f-bce3-4d29-9f68-de4abe56d4f4)
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 07](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/ca2e6839-3439-42f1-80af-fda2110b9c81)
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 17](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/83fe651b-1545-4682-a646-66d8b87d6dc5)
 ![Simulator Screenshot - iPhone 15 - 2024-06-17 at 02 16 35](https://github.com/gembalisandesh/WeatherApplication/assets/93411433/2b7b8c65-5e8e-4163-a562-850e4efadba5)
