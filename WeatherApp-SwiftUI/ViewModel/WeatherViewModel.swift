@@ -10,7 +10,8 @@ import Combine
 import CoreLocation
 final class WeatherViewModel: ObservableObject {
     @Published var weatherModel = WeatherModel.empty()
-    
+    @Published var isCelsius: Bool = true
+    @Published var temperatureUnit: TemperatureUnit = .celsius
     let locationManager = LocationManager.shared
     private var cancellables = Set<AnyCancellable>()
     
@@ -100,7 +101,9 @@ final class WeatherViewModel: ObservableObject {
     
     /// Retrieves the current temperature in Celsius.
     var DailyWeatherTemp: String {
-        return getTempFor(temp: weatherModel.current.temp)
+        let currentTemp = weatherModel.current.temp
+        let tempString = getTempFor(temp: currentTemp)
+        return "\(tempString)°\(temperatureUnit == .celsius ? "C" : "F")"
     }
     
     /// Retrieves the current weather conditions description.
@@ -130,9 +133,23 @@ final class WeatherViewModel: ObservableObject {
     
     /// Converts temperature from Fahrenheit to Celsius.
     func getTempFor(temp: Double) -> String {
-        return String(format: "%0.1f", 5.0/9*(temp-32))
+        switch temperatureUnit {
+        case .celsius:
+            let celsiusTemp = (temp - 32) * 5 / 9
+            return String(format: "%.1f", celsiusTemp)
+        case .fahrenheit:
+            let fahrenheitTemp = (temp * 9 / 5) + 32
+            return String(format: "%.1f", fahrenheitTemp)
+        }
     }
-    
+
+
+
+    func toggleTemperatureUnit() {
+        temperatureUnit = (temperatureUnit == .celsius) ? .fahrenheit : .celsius
+        refreshWeather()
+    }
+
     // MARK: - Date Formatting
     
     /// Converts timestamp to day of the week abbreviation (e.g., Mon, Tue).
@@ -231,4 +248,8 @@ final class WeatherViewModel: ObservableObject {
             getWeatherForCurrentLocation()
         }
     }
+    enum TemperatureUnit {
+            case celsius
+            case fahrenheit
+        }
 }

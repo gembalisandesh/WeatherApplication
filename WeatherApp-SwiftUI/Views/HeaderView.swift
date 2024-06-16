@@ -43,6 +43,20 @@ struct HeaderView: View {
                 }
             }
             .frame(width: 50, height: 50)
+
+            Button(action: {
+                // Toggle the temperature unit
+                cityVM.toggleTemperatureUnit()
+            }) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.green)
+                    Text(cityVM.temperatureUnit == .celsius ? "°C" : "°F") // Display the temperature unit symbol
+                        .font(.title2)
+                        .foregroundColor(.white)
+                }
+            }
+            .frame(width: 50, height: 50)
         }
         .foregroundColor(.white)
         .padding()

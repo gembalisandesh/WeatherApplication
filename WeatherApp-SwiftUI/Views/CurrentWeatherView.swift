@@ -24,7 +24,7 @@ struct CurrentWeatherView: View {
                     
 //                        cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
 //                        
-                        Text("\(cityVM.DailyWeatherTemp)℃")
+                        Text("\(cityVM.DailyWeatherTemp)")
                             .font(.system(size: 42))
                         
                     
