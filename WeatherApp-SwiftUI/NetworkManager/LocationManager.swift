@@ -1,3 +1,10 @@
+//
+//  LocationManager.swift
+//  WeatherApp-SwiftUI
+//
+//  Created by Gembali Sandesh Kumar on 15/06/24
+//
+
 import CoreLocation
 import Combine
 
